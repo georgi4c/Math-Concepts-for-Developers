@@ -1,0 +1,211 @@
+pdf - Probability density function - probability of a random variable lying between two values
+cdf - Cumulative distribution function
+ppf - percent point function - обратна е на cdf
+𝛼_𝑐 - алфа критикъл - p value - critical confidence level
+
+Confidence interval - доверителен интервал -a range of values that we're fairly sure contains the true value
+Confidence level – the probability that the value falls within the interval
+кумулативно разпределение
+Каква е връзката между разпределение и интегриране
+Категориина променлива
+Непрекъсната променлива
+Екстремна стойност
+
+
+Euler’s Formula - e^(i*fi) = cos(fi) + i*sing(fi)
+
+every algebraic equation has as many roots as its power
+
+Galois field - Elements {0, 1} - Addition: equivalent to XOR - Multiplication: as usual
+
+Scalar product of two vectors - Also called dot product or inner product va * vb = len(va) * len(vb) * cos(theta)
+Vector product of two vectors - Also called cross product - va x vb = len(va) * len(vb) * sin(theta) * vn
+	vn  – normal vector
+
+Vector Space (or linear space)  - A set of elements (vectors): 𝑉 - A field (usually R or C): 𝐹 - We read this as "vector space (or linear space) 𝑉 over the field 𝐹
+Linear Combinations - The sum of each vector multiplied by a scalar coefficient - Span (linear hull) of vectors: the set of all their linear combinations
+Linear (in)dependence - Conversely, they are linearly dependent if there is a non-trivial linear combination which is equal to zero
+
+Matrix - A rectangular table of numbers
+All 𝑚×𝑛 matrices form a vector space
+Transposition: turning rows into columns and vice versa
+Matrix Multiplication - The dimensions must match - Inner dimensions" are the same; result has “outer dimensions - Note that 𝐴𝐵≠𝐵𝐴 = We say that matrix multiplication is not commutative
+
+Linear Transformations
+Transformation - A mapping (function) between two vector spaces 𝑉→𝑊
+Linear - Only linear combinations are allowed
+Each space has a basis - All other vectors can be expressed as linear combinations of the basis vectors - If we know how basis vectors are transformed, we can transform every other vector
+Transformation Matrices - We applied the linear transformation by taking dot products - Now, applying the transformation to a vector is the same as multiplying the matrix times the original vector (in that order!)
+Inverse Matrix - The inverse transformation has its own matrix: 𝑇^(−1) - If we apply the transformation and the inverse, we'll get our initial result
+
+
+Limit - Gives us a nice way to define "approaching a value"
+Derivatives - The rate of change of a function 𝑓(𝑥) as its argument 𝑥 changes, is called the first derivative of 𝑓(𝑥) with respect to 𝑥
+Function Extrema - The smallest value of 𝑓(𝑥) is called a global minimum - Conversely, largest value: global maximum - These are collectively called extrema (plural of extremum)
+Smallest / largest value of 𝑓(𝑥) in a tiny range: local min / max
+Also notice that if 𝑓^′ (𝑥)>0 in a given interval, the function increases If 𝑓^′ (𝑥)<0, the function decreases
+The second derivative gives us more information about whether the function is "concave up" or "concave down" - These are sometimes called convex and concave functions
+
+Integrals
+definite integral - определен интеграл
+Indefinite integral: the same, without the end points
+Antiderivatives - The antiderivative 𝐹(𝑥) of a function 𝑓(𝑥) is such a function that 𝐹^′ (𝑥)=𝑓(𝑥)
+Gradient Descent - Optimization method used for finding local extrema
+
+
+Probability
+
+Random event - A set of outcomes of an experiment - Each outcome happens with a certain probability
+Random variable - An expression whose value is the outcome of the experiment - Usually denoted with 𝐬 𝐬 𝐦 (capital letters)
+It is not possible to predict the next outcome of a random event!
+Countable and Uncountable Outcomes - in some random variables have infinitely many outcomes Example: intervals
+Frequency - p(a) We call this the probability of outcome A
+Probability density – the probability of the result being in a tiny interval 𝐵
+
+Combinatorics -  Combinatorics deals with counting objects and groups of objects
+Notation All outcomes: 𝐍 - All experiment outcomes: 𝐍 - Usually 𝐠is fixed and 𝐠depends on the experiment
+Rule of sum - The two actions cannot be done at the same time - There are 𝐠+ 𝐠ways to choose one of these actions
+Rule of product - 𝐠choices for one action, 𝐠choices for another action - The two actions are performed one after the other - There are 𝐮 𝐠ways to do both actions
+
+Permutations - A permutation (without repetition) of a set 𝐠is any shuffling of all elements in 𝐀
+Variations - A variation is an ordered subset of 𝐠elements from A
+Combinations - A combination is an unordered subset of k elements from A
+
+Event – a result from the experiment
+Event space – the set Ω of all possible events
+
+Conditional Probability - Additional information about the experiment outcome - can change the probabilities
+Event Independence - Sometimes, an event doesn't influence another event - They are called independent events
+If two events are independent, knowledge of one does not tell us
+anything about the other
+
+Descriptive Statistics - Numbers which are used to summarize and describe data
+We work with all items of interest – statistical population
+We don’t try to make predictions, just describe what we’re seeing
+
+Inferential Statistics - In many cases the population is too large (or even infinite)
+We represent the population by a subset – sample - The population characteristics can be estimated - by using the sample
+In most cases we need random sampling of the population
+Sampling - The process of selecting a sample from the population
+Steps in the sampling process
+	Define the population
+	Specify the sampling frame – a set of items from the population
+	Specify the sampling method – how to select items from the frame
+	Determine the sample size
+	Implement the sampling and collect data
+A badly done sampling can induce biases and errors
+	Selection bias – selecting a non-random sample
+	Random sampling error – random variations in the results
+	
+Stratified sampling - Divide the population into categories (subpopulations)
+
+Summarizing Distributions - A histogram is a complete description of the sample distribution
+Summary statistics
+Central tendency - Do the values tend to cluster around a center?
+Modes - How many clusters are there? Where are they?
+Variance - How much variability is there (how "spread out" is the distribution)?
+Tails - How quickly do probabilities drop off as we move away from the center(s)?
+Outliers - Are there extreme values, far from the center(s)?
+
+Measures of Central Tendency
+Average – a number which describes a typical data point - Can be calculated in many ways
+Arithmetic mean - The sum of all measurements divided by the number of observations
+Median - The middle value of the distribution - To calculate it, the numbers must be sorted in ascending order
+Mode - The most frequent item
+
+Variance - Describes how far away a sample is from the sample mean
+	All differences from the mean 𝑥_𝑖−𝑥 ̅ can be positive or negative
+	They all sum up to 0 (that's the definition of the mean)
+	So we square them to make them positive
+	Standard deviation: 𝑆(𝑥)=√(𝑆^2 (𝑥))
+
+In the sample variance formula, there is 𝑛−1 in the denominator - It refers to "degrees of freedom" – how many items we can remove
+Because all distances sum up to 0, if we know 𝑛−1 of them, we can find the last one
+
+Moments of Distributions - Defined for discrete and continuous variables - Measure the shape of the probability distribution
+	Zeroth moment: 1 (total probability)
+	First moment: arithmetic mean 𝜇
+	Second moment: variance 𝜎^2
+	Third moment: skewness 𝛾 -	Asymmetry in the distribution
+	Fourth moment: kurtosis 𝛽 - Heaviness of the "tails"
+
+Standard Score - In order to compare different Gaussian distributions, we can "normalize" them
+
+Covariance is a measure of the joint variability of two variables
+	Positive: as one variable increases, the other also increases
+	Negative: as one variable increases, the other decreases
+	Zero: the two variables don't vary together at all
+	
+Like the variance, covariance is in "weird" units - We divide by the standard deviations to normalize them⇒ standard scores (similar to z-scores)
+This is called Pearson's correlation coefficient
+The correlation coefficient can be in [−1; 1] - High absolute value ⇒ strong correlation
+
+Correlation Does Not Imply Causation! - If two variables are correlated, this does not mean that necessarily the first causes the second
+
+
+
+Confidence Intervals - In an experiment, we can't observe the variables' true values directly
+Confidence interval – a range of values that we're fairly sure contains the true value
+Confidence level – the probability that the value falls within the interval
+Typically used confidence intervals 50%; 90%; 95%; 99,7%
+Observe the Z-distribution (Gaussian, 𝜇=0,  𝜎=1)
+Commonly used intervals - 1𝜎→68,27%; 2𝜎→95,45%;3𝜎→99,73% - Also 1,96𝜎→95%
+
+Hypotheses
+After performing an experiment and getting data, the scientific method requires that we form a hypothesis
+In the simplest case, we have two hypotheses
+	Null hypothesis (𝐻_0) – the status quo is real, "nothing interesting happens"
+	Alternate hypothesis (𝐻_1) – what we're trying to demonstrate
+	
+Types of hypotheses
+	Attributive – something exists and can be measured
+	Associative – there is a relationship between two behaviors
+	Causal – differences in the amount / kind of one behavior cause differences in other behaviors
+Note that attributive hypotheses involve one variable (univariate) while associative and causal hypotheses involve two variables (bivariate)
+
+Testing a Hypothesis
+	We cannot prove (or reject) a hypothesis with complete certainty
+The errors we can make are two types
+	Type I error – reject 𝐻_0 while it's true (false positive)
+	Type II error – accept 𝐻_0 while 𝐻_1 is true (false negative)
+	
+To measure the probability of producing a wrong hypothesis, we use a test statistic – measure of deviations from 𝐻_0
+	We accept or reject the null hypothesis based on the value of the test statistic
+	Let's denote the probability of getting a type I error with 𝛼
+	Each value of the selected test statistic has a corresponding alpha-value
+	We perform the experiment, get data and calculate the test statistic value
+	From that, we calculate the corresponding alpha-value
+	We reject the null hypothesis  if 𝛼<𝛼_𝑐 , where 𝛼_𝑐 is a critical confidence level
+	
+Z-test - A Z-test uses the Z-statistic - 𝐻_0: standard normal distribution
+Suppose we take a lot of samples from the entire population
+	Each sample mean will be different
+	The distribution of sample means will be more or less Gaussian
+	Parameters (our best estimate): 𝜇_𝑥 ̅ =𝜇, 𝜎_𝑥 ̅ =𝜎/√𝑛
+	Here’s why the parameters are chosen as such
+If 𝐻_0 is correct, we assume that 𝑥 ̅~𝑁(𝜇,𝜎\/√𝑛)
+
+Two-tailed Z-test
+One-tailed Z-test
+
+t-test - The Z-test requires that we know the standard deviation of the population - Usually not available
+Advantages over the Z-test
+	We don't need to know the population 𝜎
+	It's better when we have very small sample sizes (e.g., 𝑛 < 30)
+	It can be used for testing the mean of a sample against a standard, but also for comparing two means
+
+--- more
+
+
+ANOVA (Analysis of Variance) – useful for grouped dataObserve the variance inside groups and between groups
+Chi-square(d) test – can be applied to categorical data
+Two common types
+	How good a model is (goodness of fit)
+	Whether two variables are independent
+
+
+
+
+
+
+
